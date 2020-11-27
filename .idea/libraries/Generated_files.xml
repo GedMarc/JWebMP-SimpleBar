@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/angular/e2e/protractor.conf.min.js" />
+        <item url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/angular/karma.conf.min.js" />
+        <item url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/gatsby/gatsby-browser.min.js" />
+        <item url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/gatsby/gatsby-node.min.js" />
+        <item url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/gatsby/gatsby-ssr.min.js" />
+        <item url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/packages/website/gatsby-browser.min.js" />
+        <item url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/packages/website/gatsby-node.min.js" />
+        <item url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/packages/website/gatsby-ssr.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/angular/e2e/protractor.conf.min.js" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/angular/karma.conf.min.js" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/gatsby/gatsby-browser.min.js" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/gatsby/gatsby-node.min.js" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/examples/gatsby/gatsby-ssr.min.js" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/packages/website/gatsby-browser.min.js" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/packages/website/gatsby-node.min.js" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/bower_components/simplebar/packages/website/gatsby-ssr.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
