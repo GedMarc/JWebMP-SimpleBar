@@ -31,7 +31,7 @@ import jakarta.validation.constraints.NotNull;
 @PluginInformation(pluginName = "Simple Bar",
         pluginDescription = "SimpleBar does only one thing: replace the browser's default scrollbar with a custom CSS-styled one without losing performances. Unlike some popular plugins, SimpleBar doesn't mimic scroll with Javascript, causing janks and strange scrolling behaviours... You keep the awesomeness of native scrolling...with a custom scrollbar!\n" +
                 "SimpleBar does NOT implement a custom scroll behaviour. It keeps the native overflow: auto scroll and only replace the scrollbar visual appearance.",
-        pluginUniqueName = "jwebmp-simplebar",
+        pluginUniqueName = "simplebar",
         pluginVersion = "5.1.0",
         pluginCategories = "simplebar,ui,web ui, framework",
         pluginSubtitle = "SimpleBar makes sidebar development faster and easier.",
