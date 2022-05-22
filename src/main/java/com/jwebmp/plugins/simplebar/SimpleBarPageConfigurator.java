@@ -16,11 +16,12 @@
  */
 package com.jwebmp.plugins.simplebar;
 
-import com.jwebmp.core.Page;
-import com.jwebmp.core.plugins.PluginInformation;
-import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
-import com.jwebmp.core.services.IPageConfigurator;
-import jakarta.validation.constraints.NotNull;
+import com.jwebmp.core.*;
+import com.jwebmp.core.base.angular.services.annotations.*;
+import com.jwebmp.core.base.angular.services.annotations.references.*;
+import com.jwebmp.core.plugins.*;
+import com.jwebmp.core.services.*;
+import jakarta.validation.constraints.*;
 
 /**
  * The 3 meta tags *must* come first in the head; any other head content must come *after* these tags
@@ -42,43 +43,19 @@ import jakarta.validation.constraints.NotNull;
         pluginIconImageUrl = "bower_components/simplebar/simplebarlogo.jpg",
         pluginOriginalHomepage = "https://github.com/Grsmto/simplebar",
         pluginDownloadUrl = "https://jwebmp.com/?p=SimpleBar")
+@TsDependency(value = "simplebar-angular",version = "*")
+@NgBootImportReference(name = "SimplebarAngularModule",reference = "simplebar-angular")
+@NgBootModuleImport("SimplebarAngularModule")
+
 public class SimpleBarPageConfigurator
         implements IPageConfigurator<SimpleBarPageConfigurator> {
-    /**
-     * If this configurator is enabled
-     */
-    private static boolean enabled = true;
-
     /**
      * The default page configurator for simplebar
      */
     public SimpleBarPageConfigurator() {
         //Nothing Needed
     }
-
-    /**
-     * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
-     * <p>
-     * If this configurator is enabled
-     *
-     * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
-     */
-    public static boolean isEnabled() {
-        return SimpleBarPageConfigurator.enabled;
-    }
-
-    /**
-     * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
-     * <p>
-     * If this configurator is enabled
-     *
-     * @param mustEnable the enabled of this AngularAnimatedChangePageConfigurator object.
-     */
-    public static void setEnabled(boolean mustEnable) {
-        SimpleBarPageConfigurator.enabled = mustEnable;
-    }
-
-
+    
     /**
      * The 3 meta tags *must* come first in the head; any other head content must come *after* these tags
      * <p>
@@ -90,19 +67,12 @@ public class SimpleBarPageConfigurator
     @NotNull
     @Override
     public Page<?> configure(Page<?> page) {
-        if (!page.isConfigured() && enabled()) {
-            JQueryPageConfigurator.setRequired(true);
-            page.getBody()
-                    .addJavaScriptReference(SimpleBarReferencePool.SimpleBarCoreReference.getJavaScriptReference());
-            page.getBody()
-                    .addCssReference(SimpleBarReferencePool.SimpleBarCoreReference.getCssReference());
-        }
         return page;
     }
 
     @Override
     public boolean enabled() {
-        return SimpleBarPageConfigurator.enabled;
+        return true;
     }
 
 }
